@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"mapReduce/internal/reduce"
+	"mapreduce/internal/reduce"
 	"os"
 )
 
