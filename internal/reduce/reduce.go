@@ -13,10 +13,10 @@ var (
 
 func Map[T any, R any](treads int, data []T, f func(T) R) ([]R, error) {
 	if treads == 0 {
-		return nil, fmt.Errorf("Map: %w", goroutinesIsNil)
+		return nil, fmt.Errorf("map: %w", goroutinesIsNil)
 	}
 	if len(data) == 0 {
-		return nil, fmt.Errorf("Map: %w", dataNil)
+		return nil, fmt.Errorf("map: %w", dataNil)
 	}
 
 	wg := sync.WaitGroup{}
